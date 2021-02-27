@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block bodyblock %}
+<div class="faceapp">
+  <div class="container">
+    <br />
+    <h4 style="color: darkgreen">Gender Classification</h4>
+    <form method="POST" enctype="multipart/form-data">
+      <b>Note: </b
+      ><label for="image">Upload a face image to predict gender!</label>
+      <br />
+      <input type="file" name="image" id="image" required accept="image/*" />
+      <button class="btn-upload" name="click" type="submit">Predict</button>
+    </form>
+  </div>
+
+  {% if fileUpload %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-left">Original Image</div>
+      <div class="col-md-6 text-left">Prediction</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="{{url_for('static', filename='uploads/')}}{{img_name}}"
+          alt="original image"
+          class="img-result"
+          width="{{ w }}"
+        />
+      </div>
+      <div class="col-md-6">
+        <img
+          src="{{url_for('static', filename='predict/')}}{{img_name}}"
+          alt="predicted image"
+          class="img-result"
+          width="{{ w }}"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endif %} {% endblock bodyblock %}

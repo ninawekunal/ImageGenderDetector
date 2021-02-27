@@ -1,0 +1,48 @@
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+.logo {
+  height: 60px;
+  width: 100px;
+}
+.footer {
+  background-color: lightgray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+.h4 {
+  color: red;
+}
+.img-description {
+  height: 300px;
+  width: 600px;
+}
+.btn-upload {
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+.btn-upload:hover {
+  background-color: skyblue;
+  color: blue;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+}
+.try-it-button {
+  border: 1px solid lightgreen;
+  padding: 10px;
+  background-color: green;
+  color: white;
+}
+.faceapp {
+  margin-top: -30px;
+  margin-bottom: 0;
+}
+.img-result {
+  height: 280px;
+}
