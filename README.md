@@ -1,4 +1,4 @@
-# ImageGenderDetector
+# [ImageGenderDetector](https://ninawekunal.github.io/ImageGenderDetector/faceapp.html)
 
 **Objective:** To Develop a Face recognition project that is driven by data and machine learning models which can detect the face and classify the gender of the person in the uploaded image with an accuracy of 80% and can also work on multiple faces and video as well.
 
